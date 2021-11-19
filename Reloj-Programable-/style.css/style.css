@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #9fd5d1;
+    display: flex;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    font-size: 200%;
+    height: 100vh;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+main{
+    background: url(./images/fondo1.jpg) -655px -470px;
+    display: flex;
+    border: 20px solid rgb(48, 42, 44);
+    background-color: rgb(121, 120, 120);
+    border-radius: 50px;
+    height: 58%;
+    width: 45%;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    box-shadow: 7px 5px 15px 5px #3F5452;
+}
+
+.correa1{
+    border: 115px solid black;
+    width: 25px;
+    padding: 0 0 0 125px;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.hora{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+
+.estado{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+}
+
+.hora_tipo{
+    display: flex;
+    align-items: flex-start;
+    
+}
+.correa2{
+    border: 115px solid black;
+    width: 25px;
+    padding: 0 125px 0 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 7px 16px 15px 5px #283533;
+
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    margin: 73px 0 -82px 0;
+    
+}
+
+button{
+    background: none;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    padding: 15px;
+    
+}
+
+button:hover{
+    background-color: blue;
+}
