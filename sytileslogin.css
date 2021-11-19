@@ -1,0 +1,42 @@
+body {
+  background-color: aqua;
+}
+
+.contenedor1 {
+  float: right;
+  margin: 10% 10% 0 0;
+  box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px black;
+}
+
+.contenedor1 img {
+  height: 15%;
+}
+
+.calculadora1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.contenedor2 {
+  float: left;
+  margin: 10% 0 0 13%;
+  box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px black;
+}
+.juego1 {
+  font-size: 50px;
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+
+.contenedor3 {
+  float: right;
+  margin: 8% 35% 0 0;
+  box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px black;
+}
+
+.juego2 {
+  font-size: 50px;
+  text-align: center;
+}
