@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+
+    var contador_h=0;
+    var contador_s =0;
+    var contador_m =0;
+    var cronometro;
+
+
+    function detenerse()
+    {
+        clearInterval(cronometro);
+    
+
+    }
+
+ 
+
+    function carga()
+    {
+        
+
+        s = document.getElementById("segundos");
+
+        m = document.getElementById("minutos");
+
+        h = document.getElementById("horas");
+
+        cronometro = setInterval(
+
+            function(){
+
+                if(contador_s==60)
+
+                {
+
+                  contador_s=0;
+
+                    contador_m++;
+
+                    m.innerHTML = contador_m;
+
+ 
+
+                    if(contador_m==60)
+
+                    {
+
+                        contador_m=0;
+
+                        contador_h++;
+
+                        h.innerHTML = contador_h;
+
+                        if(contador_h==24){
+
+                            contador_h=0;
+
+                        }
+                    }
+                    
+
+                }
+
+ 
+ 
+                    s.innerHTML = contador_s;
+
+                    contador_s++;
+
+ 
+
+            }
+
+            ,1000);
+
+ 
+
+    }
+
+    
+ 
+
+    </script>
+
+</head>
+
+<body  >
+    
+
+    <p>
+
+        <span id="horas">0</span>:<span id="minutos">0</span>:<span id="segundos">0</span>
+
+    </p>
+
+    <input type="button" onclick="detenerse()" value="C"/>
+    <input type="button" onclick="carga()" value="A"/>
+    <input type="button" onclick="cambio()" value="B"/>
+   
+    
+</body>
+
+</html>
